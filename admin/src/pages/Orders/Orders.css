@@ -1,0 +1,69 @@
+.order-add {
+  padding: 20px;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-item-container {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-item {
+  flex: 1;
+  text-align: center;
+}
+
+.order-item img {
+  max-width: 40px;
+}
+
+.order-item-food,
+.order-item-table,
+.order-item-people,
+.order-item-time,
+.order-item-payment,
+.order-item-amount,
+.order-item-status,
+.order-item-status-select {
+  flex: 1;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.order-item-status-select select {
+  padding: 5px;
+  color: white;
+  background-color: deepskyblue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.order-item-status-select select option {
+  color: black;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .order-item-container {
+    flex-direction: column;
+  }
+
+  .order-item {
+    width: 100%;
+  }
+
+  .order-item img {
+    margin-bottom: 10px;
+  }
+}

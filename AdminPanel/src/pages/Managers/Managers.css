@@ -1,0 +1,43 @@
+.managers-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.manager-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+.form-control label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

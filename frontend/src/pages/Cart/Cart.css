@@ -1,0 +1,134 @@
+.cart {
+  margin-top: 100px;
+  padding: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-items-title {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  color: grey;
+  font-size: max(1vw, 12px);
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-items-item {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-items-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.cart-items-item p {
+  margin: 0;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.remove-button {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.remove-button:hover {
+  text-decoration: underline;
+}
+
+.cart-items-title p,
+.cart-items-item p {
+  text-align: center;
+}
+.cart hr {
+  height: 1px;
+  background-color: #e2e2e2;
+  border: none;
+}
+.cart-items-item .cross {
+  cursor: pointer;
+}
+.cart-bottom {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: max(12vw, 20px);
+}
+.cart-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+}
+.cart-total hr {
+  margin: 10px 0px;
+}
+.cart-total button {
+  border: none;
+  color: white;
+  background-color: deepskyblue;
+  width: max(15vw, 200px);
+  padding: 12px 0px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cart-voucher {
+  flex: 1;
+}
+.cart-voucher p {
+  color: #555;
+}
+.cart-voucher-input {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eaeaea;
+  border-radius: 4px;
+}
+.cart-voucher-input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+.cart-voucher-input button {
+  width: max(10vw, 150px);
+  padding: 12px 5px;
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+@media (max-width: 750px) {
+  .cart-bottom {
+    flex-direction: column-reverse;
+  }
+  .cart-voucher {
+    justify-content: start;
+  }
+}

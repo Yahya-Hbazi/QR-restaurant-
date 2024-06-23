@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.addButton {
+    background-color: #c1d9eb;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+@media print {
+
+    html,
+    body {
+        height: initial !important;
+        overflow: initial !important;
+    }
+
+    .qrcode {
+        margin-top: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .qrcode canvas {
+        width: 500px !important;
+        height: 100% !important;
+    }
+}

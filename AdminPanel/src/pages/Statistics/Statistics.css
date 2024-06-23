@@ -1,0 +1,21 @@
+.statistics-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.statistics-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column; /* Display charts in a column */
+  gap: 20px; /* Add space between charts */
+}
+
+.chart {
+  /* Remove width: 45%; to allow charts to take full width of their container */
+  margin-bottom: 20px;
+}
